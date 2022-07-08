@@ -14,6 +14,7 @@
 - SCSS
 - Vanilla JavaScript
 - Post CSS
+- Animate.css
 - Parcel Bundler
 - NPM (Node Package Manager)
 - Font Awesome

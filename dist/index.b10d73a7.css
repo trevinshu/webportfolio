@@ -345,6 +345,7 @@ body .container .educationContainer .freeCodeCampContainer li {
 }
 
 body .container .educationContainer .freeCodeCampContainer button {
+  cursor: pointer;
   width: 100%;
   color: #f5f5f5;
   text-transform: uppercase;
@@ -354,6 +355,69 @@ body .container .educationContainer .freeCodeCampContainer button {
   border-radius: 1rem;
   outline: none;
   padding: .5rem;
+}
+
+body .container .educationContainer .freeCodeCampContainer button:hover {
+  color: #121212;
+  background-color: #00a0ff;
+  transition: all .15s ease-in;
+}
+
+body .container .projectsContainer {
+  margin-top: 1rem;
+}
+
+body .container .projectsContainer h2 {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-bottom: 2px solid #00a0ff;
+  padding-bottom: .5rem;
+}
+
+body .container .projectsContainer .weatherAppContainer {
+  background-color: #2c2c2c;
+  border-radius: 1rem;
+  margin-top: 1rem;
+  padding: 1rem;
+  box-shadow: 1.95px 1.95px 2.6px #2c2c2c26;
+}
+
+body .container .projectsContainer .weatherAppContainer h3 {
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 3px;
+  color: #f5f5f5;
+  border-bottom: 2px solid #00a0ff;
+  margin-bottom: 1rem;
+  padding-bottom: .5rem;
+  font-weight: 700;
+}
+
+body .container .projectsContainer .weatherAppContainer img {
+  margin: auto;
+  display: block;
+}
+
+body .container .projectsContainer .weatherAppContainer h4 {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-bottom: 2px solid #00a0ff;
+  padding-top: 1rem;
+  padding-bottom: .5rem;
+  font-weight: 400;
+}
+
+body .container .projectsContainer .weatherAppContainer p {
+  letter-spacing: 3px;
+  padding-top: 1rem;
+  font-weight: 300;
+  line-height: 2;
 }
 
 /*# sourceMappingURL=index.b10d73a7.css.map */

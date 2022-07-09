@@ -283,6 +283,7 @@ body {
         }
 
         button {
+          cursor: pointer;
           background: none;
           outline: none;
           border: none;
@@ -293,6 +294,65 @@ body {
           padding: 0.5rem;
           text-transform: uppercase;
           letter-spacing: 3px;
+
+          &:hover {
+            background-color: #00a0ff;
+            transition: all ease-in 0.15s;
+            color: $primaryColor;
+          }
+        }
+      }
+    }
+
+    .projectsContainer {
+      margin-top: 1rem;
+
+      h2 {
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        padding-bottom: 0.5rem;
+        width: fit-content;
+        border-bottom: $accentColor solid 2px;
+      }
+
+      .weatherAppContainer {
+        background-color: $secondaryColor;
+        margin-top: 1rem;
+        padding: 1rem;
+        border-radius: 1rem;
+        box-shadow: rgba(44, 44, 44, 0.15) 1.95px 1.95px 2.6px;
+
+        h3 {
+          font-weight: 700;
+          text-transform: uppercase;
+          text-align: center;
+          letter-spacing: 3px;
+          padding-bottom: 0.5rem;
+          color: $textColor;
+          border-bottom: $accentColor solid 2px;
+          margin-bottom: 1rem;
+        }
+
+        img {
+          margin: auto;
+          display: block;
+        }
+
+        h4 {
+          text-transform: uppercase;
+          letter-spacing: 3px;
+          font-weight: 400;
+          padding-top: 1rem;
+          padding-bottom: 0.5rem;
+          width: fit-content;
+          border-bottom: $accentColor solid 2px;
+        }
+
+        p {
+          font-weight: 300;
+          line-height: 2;
+          letter-spacing: 3px;
+          padding-top: 1rem;
         }
       }
     }

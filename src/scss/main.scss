@@ -147,9 +147,60 @@ body {
 
         p {
           font-weight: 300;
-          text-transform: uppercase;
           line-height: 2;
           letter-spacing: 3px;
+
+          span {
+            color: $accentColor;
+          }
+        }
+      }
+    }
+
+    .educationContainer {
+      margin-top: 1rem;
+
+      h2 {
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        padding-bottom: 0.5rem;
+        width: 50%;
+        border-bottom: $accentColor solid 2px;
+      }
+      .educationContent {
+        background-color: $secondaryColor;
+        margin-top: 1rem;
+        padding: 1rem;
+        border-radius: 1rem;
+        box-shadow: rgba(44, 44, 44, 0.15) 1.95px 1.95px 2.6px;
+        .naitContainer {
+          h3 {
+            font-size: 1rem;
+            font-weight: 400;
+            text-transform: capitalize;
+            letter-spacing: 3px;
+            padding-bottom: 0.5rem;
+            color: $accentColor;
+
+            span {
+              font-weight: 300;
+              color: $textColor;
+            }
+          }
+
+          h4 {
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-weight: 400;
+            padding-top: 1rem;
+          }
+
+          li {
+            // padding-block: 0.5rem;
+            line-height: 2;
+            letter-spacing: 3px;
+            font-weight: 300;
+          }
         }
       }
     }

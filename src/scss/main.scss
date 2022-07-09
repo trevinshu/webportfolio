@@ -129,7 +129,7 @@ body {
         text-transform: uppercase;
         letter-spacing: 3px;
         padding-bottom: 0.5rem;
-        width: 50%;
+        width: fit-content;
         border-bottom: $accentColor solid 2px;
       }
 
@@ -164,43 +164,135 @@ body {
         text-transform: uppercase;
         letter-spacing: 3px;
         padding-bottom: 0.5rem;
-        width: 50%;
+        width: fit-content;
         border-bottom: $accentColor solid 2px;
       }
-      .educationContent {
+      .naitContainer {
         background-color: $secondaryColor;
         margin-top: 1rem;
         padding: 1rem;
         border-radius: 1rem;
         box-shadow: rgba(44, 44, 44, 0.15) 1.95px 1.95px 2.6px;
-        .naitContainer {
-          h3 {
-            font-size: 1rem;
-            font-weight: 400;
-            text-transform: capitalize;
-            letter-spacing: 3px;
-            padding-bottom: 0.5rem;
-            color: $accentColor;
+        h3 {
+          font-size: 1rem;
+          font-weight: 400;
+          text-transform: capitalize;
+          letter-spacing: 3px;
+          padding-bottom: 0.5rem;
+          color: $accentColor;
 
-            span {
-              font-weight: 300;
-              color: $textColor;
-            }
-          }
-
-          h4 {
-            text-transform: uppercase;
-            letter-spacing: 3px;
-            font-weight: 400;
-            padding-top: 1rem;
-          }
-
-          li {
-            // padding-block: 0.5rem;
-            line-height: 2;
-            letter-spacing: 3px;
+          span {
             font-weight: 300;
+            color: $textColor;
           }
+        }
+
+        h4 {
+          text-transform: uppercase;
+          letter-spacing: 3px;
+          font-weight: 400;
+          padding-top: 1rem;
+          padding-bottom: 0.5rem;
+          width: fit-content;
+          border-bottom: $accentColor solid 2px;
+        }
+
+        li {
+          // padding-block: 0.5rem;
+          line-height: 2;
+          letter-spacing: 3px;
+          font-weight: 300;
+        }
+      }
+
+      .modernJsCourse {
+        background-color: $secondaryColor;
+        margin-top: 1rem;
+        padding: 1rem;
+        border-radius: 1rem;
+        box-shadow: rgba(44, 44, 44, 0.15) 1.95px 1.95px 2.6px;
+
+        h3 {
+          font-size: 1rem;
+          font-weight: 400;
+          text-transform: capitalize;
+          letter-spacing: 3px;
+          padding-bottom: 0.5rem;
+          color: $accentColor;
+
+          span {
+            font-weight: 300;
+            color: $textColor;
+          }
+        }
+
+        h4 {
+          text-transform: uppercase;
+          letter-spacing: 3px;
+          font-weight: 400;
+          padding-top: 1rem;
+          padding-bottom: 0.5rem;
+          width: fit-content;
+          border-bottom: $accentColor solid 2px;
+        }
+
+        li {
+          // padding-block: 0.5rem;
+          line-height: 2;
+          letter-spacing: 3px;
+          font-weight: 300;
+        }
+      }
+
+      .freeCodeCampContainer {
+        background-color: $secondaryColor;
+        margin-top: 1rem;
+        padding: 1rem;
+        border-radius: 1rem;
+        box-shadow: rgba(44, 44, 44, 0.15) 1.95px 1.95px 2.6px;
+
+        h3 {
+          font-size: 1rem;
+          font-weight: 400;
+          text-transform: capitalize;
+          letter-spacing: 3px;
+          padding-bottom: 0.5rem;
+          color: $accentColor;
+
+          span {
+            font-weight: 300;
+            color: $textColor;
+          }
+        }
+
+        h4 {
+          text-transform: uppercase;
+          letter-spacing: 3px;
+          font-weight: 400;
+          padding-top: 1rem;
+          padding-bottom: 0.5rem;
+          width: fit-content;
+          border-bottom: $accentColor solid 2px;
+        }
+
+        li {
+          // padding-block: 0.5rem;
+          line-height: 2;
+          letter-spacing: 3px;
+          font-weight: 300;
+        }
+
+        button {
+          background: none;
+          outline: none;
+          border: none;
+          width: 100%;
+          color: $textColor;
+          border: $accentColor solid 3px;
+          border-radius: 1rem;
+          padding: 0.5rem;
+          text-transform: uppercase;
+          letter-spacing: 3px;
         }
       }
     }

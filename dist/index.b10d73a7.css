@@ -180,7 +180,9 @@ body .container {
 body .container .aboutMeContainer h2 {
   text-transform: uppercase;
   letter-spacing: 3px;
-  width: 50%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   border-bottom: 2px solid #00a0ff;
   padding-bottom: .5rem;
 }
@@ -215,12 +217,14 @@ body .container .educationContainer {
 body .container .educationContainer h2 {
   text-transform: uppercase;
   letter-spacing: 3px;
-  width: 50%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   border-bottom: 2px solid #00a0ff;
   padding-bottom: .5rem;
 }
 
-body .container .educationContainer .educationContent {
+body .container .educationContainer .naitContainer {
   background-color: #2c2c2c;
   border-radius: 1rem;
   margin-top: 1rem;
@@ -228,7 +232,7 @@ body .container .educationContainer .educationContent {
   box-shadow: 1.95px 1.95px 2.6px #2c2c2c26;
 }
 
-body .container .educationContainer .educationContent .naitContainer h3 {
+body .container .educationContainer .naitContainer h3 {
   text-transform: capitalize;
   letter-spacing: 3px;
   color: #00a0ff;
@@ -237,22 +241,119 @@ body .container .educationContainer .educationContent .naitContainer h3 {
   font-weight: 400;
 }
 
-body .container .educationContainer .educationContent .naitContainer h3 span {
+body .container .educationContainer .naitContainer h3 span {
   color: #f5f5f5;
   font-weight: 300;
 }
 
-body .container .educationContainer .educationContent .naitContainer h4 {
+body .container .educationContainer .naitContainer h4 {
   text-transform: uppercase;
   letter-spacing: 3px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-bottom: 2px solid #00a0ff;
   padding-top: 1rem;
+  padding-bottom: .5rem;
   font-weight: 400;
 }
 
-body .container .educationContainer .educationContent .naitContainer li {
+body .container .educationContainer .naitContainer li {
   letter-spacing: 3px;
   font-weight: 300;
   line-height: 2;
+}
+
+body .container .educationContainer .modernJsCourse {
+  background-color: #2c2c2c;
+  border-radius: 1rem;
+  margin-top: 1rem;
+  padding: 1rem;
+  box-shadow: 1.95px 1.95px 2.6px #2c2c2c26;
+}
+
+body .container .educationContainer .modernJsCourse h3 {
+  text-transform: capitalize;
+  letter-spacing: 3px;
+  color: #00a0ff;
+  padding-bottom: .5rem;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+body .container .educationContainer .modernJsCourse h3 span {
+  color: #f5f5f5;
+  font-weight: 300;
+}
+
+body .container .educationContainer .modernJsCourse h4 {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-bottom: 2px solid #00a0ff;
+  padding-top: 1rem;
+  padding-bottom: .5rem;
+  font-weight: 400;
+}
+
+body .container .educationContainer .modernJsCourse li {
+  letter-spacing: 3px;
+  font-weight: 300;
+  line-height: 2;
+}
+
+body .container .educationContainer .freeCodeCampContainer {
+  background-color: #2c2c2c;
+  border-radius: 1rem;
+  margin-top: 1rem;
+  padding: 1rem;
+  box-shadow: 1.95px 1.95px 2.6px #2c2c2c26;
+}
+
+body .container .educationContainer .freeCodeCampContainer h3 {
+  text-transform: capitalize;
+  letter-spacing: 3px;
+  color: #00a0ff;
+  padding-bottom: .5rem;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+body .container .educationContainer .freeCodeCampContainer h3 span {
+  color: #f5f5f5;
+  font-weight: 300;
+}
+
+body .container .educationContainer .freeCodeCampContainer h4 {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-bottom: 2px solid #00a0ff;
+  padding-top: 1rem;
+  padding-bottom: .5rem;
+  font-weight: 400;
+}
+
+body .container .educationContainer .freeCodeCampContainer li {
+  letter-spacing: 3px;
+  font-weight: 300;
+  line-height: 2;
+}
+
+body .container .educationContainer .freeCodeCampContainer button {
+  width: 100%;
+  color: #f5f5f5;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  background: none;
+  border: 3px solid #00a0ff;
+  border-radius: 1rem;
+  outline: none;
+  padding: .5rem;
 }
 
 /*# sourceMappingURL=index.b10d73a7.css.map */

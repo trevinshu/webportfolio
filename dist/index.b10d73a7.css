@@ -2,6 +2,7 @@
 @import "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
 @import "https://emoji-css.afeld.me/emoji.css";
 @import "https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css";
+@import "https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css";
 *, :before, :after {
   box-sizing: border-box;
 }
@@ -377,7 +378,7 @@ body .container .projectsContainer h2 {
   padding-bottom: .5rem;
 }
 
-body .container .projectsContainer .weatherAppContainer {
+body .container .projectsContainer .weatherAppContainer, body .container .projectsContainer .recipeAppContainer, body .container .projectsContainer .movieAppContainer {
   background-color: #2c2c2c;
   border-radius: 1rem;
   margin-top: 1rem;
@@ -385,7 +386,7 @@ body .container .projectsContainer .weatherAppContainer {
   box-shadow: 1.95px 1.95px 2.6px #2c2c2c26;
 }
 
-body .container .projectsContainer .weatherAppContainer h3 {
+body .container .projectsContainer .weatherAppContainer h3, body .container .projectsContainer .recipeAppContainer h3, body .container .projectsContainer .movieAppContainer h3 {
   text-transform: uppercase;
   text-align: center;
   letter-spacing: 3px;
@@ -396,12 +397,12 @@ body .container .projectsContainer .weatherAppContainer h3 {
   font-weight: 700;
 }
 
-body .container .projectsContainer .weatherAppContainer img {
+body .container .projectsContainer .weatherAppContainer img, body .container .projectsContainer .recipeAppContainer img, body .container .projectsContainer .movieAppContainer img {
   margin: auto;
   display: block;
 }
 
-body .container .projectsContainer .weatherAppContainer h4 {
+body .container .projectsContainer .weatherAppContainer h4, body .container .projectsContainer .recipeAppContainer h4, body .container .projectsContainer .movieAppContainer h4 {
   text-transform: uppercase;
   letter-spacing: 3px;
   width: -webkit-fit-content;
@@ -413,11 +414,49 @@ body .container .projectsContainer .weatherAppContainer h4 {
   font-weight: 400;
 }
 
-body .container .projectsContainer .weatherAppContainer p {
+body .container .projectsContainer .weatherAppContainer p, body .container .projectsContainer .recipeAppContainer p, body .container .projectsContainer .movieAppContainer p {
   letter-spacing: 3px;
   padding-top: 1rem;
   font-weight: 300;
   line-height: 2;
+}
+
+body .container .projectsContainer .weatherAppContainer .languagesUsed, body .container .projectsContainer .recipeAppContainer .languagesUsed, body .container .projectsContainer .movieAppContainer .languagesUsed {
+  justify-content: left;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+  display: flex;
+}
+
+body .container .projectsContainer .weatherAppContainer .languagesUsed i, body .container .projectsContainer .recipeAppContainer .languagesUsed i, body .container .projectsContainer .movieAppContainer .languagesUsed i {
+  font-size: 3.5rem;
+}
+
+body .container .projectsContainer .weatherAppContainer .buttonContainer, body .container .projectsContainer .recipeAppContainer .buttonContainer, body .container .projectsContainer .movieAppContainer .buttonContainer {
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  display: flex;
+}
+
+body .container .projectsContainer .weatherAppContainer .buttonContainer button, body .container .projectsContainer .recipeAppContainer .buttonContainer button, body .container .projectsContainer .movieAppContainer .buttonContainer button {
+  cursor: pointer;
+  width: 100%;
+  color: #f5f5f5;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  background: none;
+  border: 3px solid #00a0ff;
+  border-radius: 1rem;
+  outline: none;
+  padding: .5rem;
+}
+
+body .container .projectsContainer .weatherAppContainer .buttonContainer button:hover, body .container .projectsContainer .recipeAppContainer .buttonContainer button:hover, body .container .projectsContainer .movieAppContainer .buttonContainer button:hover {
+  color: #121212;
+  background-color: #00a0ff;
+  transition: all .15s ease-in;
 }
 
 /*# sourceMappingURL=index.b10d73a7.css.map */

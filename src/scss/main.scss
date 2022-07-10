@@ -39,7 +39,7 @@ body {
         gap: 1rem;
         margin-inline: 1rem;
         padding: 1rem;
-        border-radius: 1rem;
+        border-radius: 0.5rem;
 
         li {
           list-style: none;
@@ -52,7 +52,7 @@ body {
           border: none;
           outline: none;
           background-color: $accentColor;
-          border-radius: 1rem;
+          border-radius: 0.5rem;
           padding: 0.5rem 1rem;
           text-transform: uppercase;
           letter-spacing: 3px;
@@ -126,6 +126,7 @@ body {
     padding: 1rem;
 
     .aboutMeContainer {
+      margin-top: 2rem;
       h2 {
         text-transform: uppercase;
         letter-spacing: 3px;
@@ -138,7 +139,7 @@ body {
         background-color: $secondaryColor;
         margin-top: 1rem;
         padding: 1rem;
-        border-radius: 1rem;
+        border-radius: 0.5rem;
         box-shadow: rgba(44, 44, 44, 0.15) 1.95px 1.95px 2.6px;
 
         img {
@@ -159,7 +160,7 @@ body {
     }
 
     .educationContainer {
-      margin-top: 1rem;
+      margin-top: 2rem;
 
       h2 {
         text-transform: uppercase;
@@ -172,7 +173,7 @@ body {
         background-color: $secondaryColor;
         margin-top: 1rem;
         padding: 1rem;
-        border-radius: 1rem;
+        border-radius: 0.5rem;
         box-shadow: rgba(44, 44, 44, 0.15) 1.95px 1.95px 2.6px;
         h3 {
           font-size: 1rem;
@@ -210,7 +211,7 @@ body {
         background-color: $secondaryColor;
         margin-top: 1rem;
         padding: 1rem;
-        border-radius: 1rem;
+        border-radius: 0.5rem;
         box-shadow: rgba(44, 44, 44, 0.15) 1.95px 1.95px 2.6px;
 
         h3 {
@@ -249,7 +250,7 @@ body {
         background-color: $secondaryColor;
         margin-top: 1rem;
         padding: 1rem;
-        border-radius: 1rem;
+        border-radius: 0.5rem;
         box-shadow: rgba(44, 44, 44, 0.15) 1.95px 1.95px 2.6px;
 
         h3 {
@@ -291,7 +292,7 @@ body {
           width: 100%;
           color: $textColor;
           border: $accentColor solid 3px;
-          border-radius: 1rem;
+          border-radius: 0.5rem;
           padding: 0.5rem;
           text-transform: uppercase;
           letter-spacing: 3px;
@@ -306,7 +307,7 @@ body {
     }
 
     .projectsContainer {
-      margin-top: 1rem;
+      margin-top: 2rem;
 
       h2 {
         text-transform: uppercase;
@@ -322,7 +323,7 @@ body {
         background-color: $secondaryColor;
         margin-top: 1rem;
         padding: 1rem;
-        border-radius: 1rem;
+        border-radius: 0.5rem;
         box-shadow: rgba(44, 44, 44, 0.15) 1.95px 1.95px 2.6px;
 
         h3 {
@@ -365,7 +366,7 @@ body {
           gap: 1.5rem;
           margin-top: 1.5rem;
           i {
-            font-size: 3.5rem;
+            font-size: 4rem;
           }
         }
 
@@ -382,7 +383,7 @@ body {
             width: 100%;
             color: $textColor;
             border: $accentColor solid 3px;
-            border-radius: 1rem;
+            border-radius: 0.5rem;
             padding: 0.5rem;
             text-transform: uppercase;
             letter-spacing: 3px;
@@ -393,6 +394,100 @@ body {
               color: $primaryColor;
             }
           }
+        }
+      }
+    }
+
+    .contactForm {
+      margin-top: 2rem;
+      h2 {
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        padding-bottom: 0.5rem;
+        width: fit-content;
+        border-bottom: $accentColor solid 2px;
+      }
+      form {
+        fieldset {
+          display: flex;
+          justify-content: space-between;
+          flex-direction: column;
+          padding: 0;
+          margin: 0;
+          gap: 1rem;
+          border: none;
+          margin-top: 1rem;
+          border-radius: 1rem;
+          box-shadow: rgba(44, 44, 44, 0.15) 1.95px 1.95px 2.6px;
+
+          input,
+          textarea {
+            resize: none;
+            background-color: $secondaryColor;
+            color: $textColor;
+            border: none;
+            border-radius: 0.5rem;
+            padding: 0.5rem;
+            outline: none;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+          }
+
+          textarea {
+            height: 15vh;
+          }
+
+          button {
+            cursor: pointer;
+            background: none;
+            outline: none;
+            border: none;
+            width: 100%;
+            color: $textColor;
+            border: $accentColor solid 3px;
+            border-radius: 0.5rem;
+            padding: 0.5rem;
+            letter-spacing: 3px;
+
+            &:hover {
+              background-color: #00a0ff;
+              transition: all ease-in 0.15s;
+              color: $primaryColor;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: $secondaryColor;
+    margin-top: 1rem;
+    padding: 1rem;
+    gap: 1rem;
+
+    .footerText {
+      p {
+        text-transform: uppercase;
+        text-align: center;
+        letter-spacing: 3px;
+      }
+    }
+
+    .socialLinks {
+      display: flex;
+      gap: 1rem;
+      a {
+        text-decoration: none;
+        font-size: 1.5rem;
+        color: $textColor;
+
+        &:hover {
+          color: #00a0ff;
+          transition: all ease-in 0.15s;
         }
       }
     }

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Trevin Shu | Portfolio</title>
-    <link rel="shortcut icon" href="img/logo.webp" type="image/x-icon" />
+    <link rel="shortcut icon" href="img/logo.svg" type="image/x-icon" />
     <link rel="stylesheet" href="scss/main.scss" />
     <script src="js/script.js" type="module" defer></script>
   </head>
@@ -24,143 +24,31 @@
       </nav>
       <div class="jumbotron">
         <h1>Hi, my name is <span>Trevin</span>. <i class="em em-wave animate__animated animate__wobble animate__infinite infinite" aria-role="presentation" aria-label="WAVING HAND SIGN"></i></h1>
-        <p>I am a <span>web developer</span>.</p>
         <button disabled class="animate__animated animate__infinite infinite animate__pulse"><i class="fa-solid fa-arrow-down"></i></button>
       </div>
     </header>
     <main class="container">
+      <h2>About Me:</h2>
       <section class="aboutMeContainer">
-        <h2>About Me:</h2>
+        <div class="imgContainer">
+          <img src="img/profilepic.webp" alt="profile pic" />
+        </div>
         <div class="aboutMeContent">
-          <img src="img/profilepic.webp" alt="" height="200px" />
           <p>
-            I am a <span>Front-End Web Developer</span> based in Edmonton, Alberta. I am passionate about Web Development and delivering feature rich web applications that are responsive,
-            aesthetically pleasing and compliant with the latest accessability standards. <br />
-            In my free time I like to listen to music and I like binge watch a lot of TV shows & movies.
+            I am a Frontend Web Developer who recently graduated from NAIT (Northern Alberta Institute of Technology) with a Diploma in Digital Media & IT specializing in Computer Software
+            Development.
+            <br /><br />
+            I am passionate about Web Development and I aim to deliver feature rich web applications that are aesthetically pleasing, responsive and compliant with the latest accessability standards.
+            <br /><br />
+            In my free time I like to listen to music, play PC games and binge watch movies and tv shows.
           </p>
+          <button><i class="fa-solid fa-file"></i> View Resume</button>
         </div>
       </section>
-      <section class="educationContainer">
-        <h2>Education:</h2>
-        <div class="naitContainer">
-          <h3>
-            <span>2019 to 2021 <i class="fa-solid fa-arrow-right"></i> </span>Diploma - Digital Media & IT (Computer Software Development)
-            <span> - NAIT (Northern Alberta Institute of Technology).</span>
-          </h3>
-          <h4>Courses Taken:</h4>
-          <ul>
-            <li>Front-End Development (HTML, CSS, Vanilla JavaScript & React).</li>
-            <li>Intermediate App Development (C# & ASP.NET).</li>
-            <li>Advanced Web Concepts (HTML, CSS & PHP).</li>
-            <li>Database Fundamentals (SQL).</li>
-            <li>Systems Analysis & Design (SCRUM Framework).</li>
-          </ul>
-          <h4>Achievements:</h4>
-          <ul>
-            <li>GPA of 3.5 or Higher - Dean's Honor Roll - Program.</li>
-            <li>GPA of 3.5 or Higher - Dean's Honor Roll - Fall 2020.</li>
-            <li>Exemplary Academic Achievement in the Digital Media and IT program - Winter 2020.</li>
-          </ul>
-        </div>
-        <div class="modernJsCourse">
-          <h3>
-            <span>2022 <i class="fa-solid fa-arrow-right"></i> </span>Modern JavaScript From The Beginning
-            <span> - Brad Traversy.</span>
-          </h3>
-          <h4>Topics Learned:</h4>
-          <ul>
-            <li>DOM Manipulation & Events.</li>
-            <li>Object Oriented JavaScript.</li>
-            <li>Fetch API (Async & Await).</li>
-          </ul>
-        </div>
-        <div class="freeCodeCampContainer">
-          <h3>
-            <span>May 26th 2020 <i class="fa-solid fa-arrow-right"></i> </span>Certificate - Responsive Web Design
-            <span> - FreeCodeCamp.</span>
-          </h3>
-          <h4>Topics Learned:</h4>
-          <ul>
-            <li>HTML & CSS.</li>
-            <li>CSS Grid.</li>
-            <li>Flexbox.</li>
-            <li>Web Accessability.</li>
-          </ul>
-          <button>View Certificate</button>
-        </div>
-      </section>
-      <section class="projectsContainer">
-        <h2>Projects:</h2>
-        <div class="movieAppContainer">
-          <h3>Movie & TV App</h3>
-          <img src="img/movietvapp-mockup.png" alt="" />
-          <h4>Project Description:</h4>
-          <p>
-            An IMDB like web application built with HTML, SCSS & Vanilla JavaScript that auto loads a list of movies & tv shows by genre and also allows an user to search for a movie/tv show. The data
-            is retrieved from The Movie DB API. Additional features include a dark/light mode that remembers an users theme preferences by saving to local storage.
-          </p>
-          <h4>Built With:</h4>
-          <div class="languagesUsed">
-            <i class="devicon-html5-plain colored"></i>
-            <i class="devicon-sass-original colored"></i>
-            <i class="devicon-javascript-plain colored"></i>
-          </div>
-          <div class="buttonContainer">
-            <button>View On GitHub</button>
-            <button>View Live</button>
-          </div>
-        </div>
-        <div class="recipeAppContainer">
-          <h3>Recipe App</h3>
-          <img src="img/recipeapp-mockup.png" alt="" />
-          <h4>Project Description:</h4>
-          <p>
-            A web application built with HTML, SCSS & Vanilla JavaScript that fetches a list of recipes based on the search input of an user. Also this application allows an user to get a list of
-            recipes via a pre-generated list of recipe categories. The recipe data is retrieved from the The Meal DB API.
-          </p>
-          <h4>Built With:</h4>
-          <div class="languagesUsed">
-            <i class="devicon-html5-plain colored"></i>
-            <i class="devicon-sass-original colored"></i>
-            <i class="devicon-javascript-plain colored"></i>
-          </div>
-          <div class="buttonContainer">
-            <button>View On GitHub</button>
-            <button>View Live</button>
-          </div>
-        </div>
-        <div class="weatherAppContainer">
-          <h3>Weather App</h3>
-          <img src="img/weatherapp-mockup.png" alt="" />
-          <h4>Project Description:</h4>
-          <p>
-            A simple no frills weather application built with HTML, SCSS & Vanilla JavaScript that fetches the weather based on an users search input (City & Country Code). The weather data is
-            retrieved from the Open Weather API and the image is data is from Unsplash.
-          </p>
-          <h4>Built With:</h4>
-          <div class="languagesUsed">
-            <i class="devicon-html5-plain colored"></i>
-            <i class="devicon-sass-original colored"></i>
-            <i class="devicon-javascript-plain colored"></i>
-          </div>
-          <div class="buttonContainer">
-            <button>View On GitHub</button>
-            <button>View Live</button>
-          </div>
-        </div>
-      </section>
-      <section class="contactForm">
-        <h2>Contact Me:</h2>
-        <form action="#">
-          <fieldset>
-            <input type="email" name="email" id="email" placeholder="Enter Your Email Address..." />
-            <textarea name="message" id="message" placeholder="Enter Your Message..."></textarea>
-            <button type="submit">Send</button>
-          </fieldset>
-        </form>
-      </section>
+      <h2>Skills:</h2>
+      <section class="skillsContainer"></section>
     </main>
-    <footer>
+    <!-- <footer>
       <div class="footerText">
         <p>Designed & Coded by Trevin Shu &copy;2022</p>
       </div>
@@ -169,6 +57,6 @@
         <a href=""><i class="fa-solid fa-at"></i></a>
         <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
       </div>
-    </footer>
+    </footer> -->
   </body>
 </html>

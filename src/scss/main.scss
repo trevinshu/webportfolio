@@ -76,6 +76,26 @@ body {
         font-size: 2rem;
         cursor: pointer;
       }
+
+      @media only screen and (min-width: 1200px) {
+        padding: 1.5rem 1rem;
+        .menu {
+          display: flex;
+          align-items: center;
+          position: relative;
+          gap: 1.5rem;
+          padding: 0;
+          margin: 0;
+          left: 0;
+          top: 0;
+          right: 0;
+          bottom: 0;
+        }
+
+        .burgerBtn {
+          display: none;
+        }
+      }
     }
 
     .jumbotron {
@@ -97,18 +117,6 @@ body {
         }
       }
 
-      p {
-        font-size: 1.2rem;
-        font-weight: 300;
-        letter-spacing: 3px;
-        text-transform: uppercase;
-
-        span {
-          color: $accentColor;
-          font-weight: 400;
-        }
-      }
-
       button {
         background: none;
         border: none;
@@ -119,375 +127,117 @@ body {
         padding: 1rem 1.5rem;
         font-size: 1.2rem;
       }
+
+      @media only screen and (min-width: 1200px) {
+        h1 {
+          font-size: 3rem;
+        }
+
+        button {
+          font-size: 2rem;
+          padding: 1rem 2rem;
+        }
+      }
     }
   }
 
   .container {
     padding: 1rem;
 
-    .aboutMeContainer {
-      margin-top: 2rem;
-      h2 {
-        text-transform: uppercase;
-        letter-spacing: 3px;
-        padding-bottom: 0.5rem;
-        width: fit-content;
-        border-bottom: $accentColor solid 2px;
-      }
+    h2 {
+      border-bottom: $accentColor solid 5px;
+      padding-block: 0.5rem;
+      width: fit-content;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+    }
 
-      .aboutMeContent {
-        background-color: $secondaryColor;
-        margin-top: 1rem;
-        padding: 1rem;
-        border-radius: 0.5rem;
-        box-shadow: rgba(44, 44, 44, 0.15) 1.95px 1.95px 2.6px;
+    .aboutMeContainer {
+      display: grid;
+      place-items: center;
+      margin-top: 1rem;
+      .imgContainer {
+        padding-top: 1rem;
+        padding-inline: 2rem;
 
         img {
-          padding-bottom: 0.5rem;
-          margin: 0 auto;
+          max-height: 350px;
+          border-radius: 0.5rem;
         }
+      }
+      .aboutMeContent {
+        background-color: $secondaryColor;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        padding: 1rem;
+        transform: translateY(-60px);
+        border-radius: 0.5rem;
 
         p {
           font-weight: 300;
+          letter-spacing: 3px;
           line-height: 2;
-          letter-spacing: 3px;
-
-          span {
-            color: $accentColor;
-          }
-        }
-      }
-    }
-
-    .educationContainer {
-      margin-top: 2rem;
-
-      h2 {
-        text-transform: uppercase;
-        letter-spacing: 3px;
-        padding-bottom: 0.5rem;
-        width: fit-content;
-        border-bottom: $accentColor solid 2px;
-      }
-      .naitContainer {
-        background-color: $secondaryColor;
-        margin-top: 1rem;
-        padding: 1rem;
-        border-radius: 0.5rem;
-        box-shadow: rgba(44, 44, 44, 0.15) 1.95px 1.95px 2.6px;
-        h3 {
-          font-size: 1rem;
-          font-weight: 400;
-          text-transform: capitalize;
-          letter-spacing: 3px;
-          padding-bottom: 0.5rem;
-          color: $accentColor;
-
-          span {
-            font-weight: 300;
-            color: $textColor;
-          }
-        }
-
-        h4 {
-          text-transform: uppercase;
-          letter-spacing: 3px;
-          font-weight: 400;
-          padding-top: 1rem;
-          padding-bottom: 0.5rem;
-          width: fit-content;
-          border-bottom: $accentColor solid 2px;
-        }
-
-        li {
-          // padding-block: 0.5rem;
-          line-height: 2;
-          letter-spacing: 3px;
-          font-weight: 300;
-        }
-      }
-
-      .modernJsCourse {
-        background-color: $secondaryColor;
-        margin-top: 1rem;
-        padding: 1rem;
-        border-radius: 0.5rem;
-        box-shadow: rgba(44, 44, 44, 0.15) 1.95px 1.95px 2.6px;
-
-        h3 {
-          font-size: 1rem;
-          font-weight: 400;
-          text-transform: capitalize;
-          letter-spacing: 3px;
-          padding-bottom: 0.5rem;
-          color: $accentColor;
-
-          span {
-            font-weight: 300;
-            color: $textColor;
-          }
-        }
-
-        h4 {
-          text-transform: uppercase;
-          letter-spacing: 3px;
-          font-weight: 400;
-          padding-top: 1rem;
-          padding-bottom: 0.5rem;
-          width: fit-content;
-          border-bottom: $accentColor solid 2px;
-        }
-
-        li {
-          // padding-block: 0.5rem;
-          line-height: 2;
-          letter-spacing: 3px;
-          font-weight: 300;
-        }
-      }
-
-      .freeCodeCampContainer {
-        background-color: $secondaryColor;
-        margin-top: 1rem;
-        padding: 1rem;
-        border-radius: 0.5rem;
-        box-shadow: rgba(44, 44, 44, 0.15) 1.95px 1.95px 2.6px;
-
-        h3 {
-          font-size: 1rem;
-          font-weight: 400;
-          text-transform: capitalize;
-          letter-spacing: 3px;
-          padding-bottom: 0.5rem;
-          color: $accentColor;
-
-          span {
-            font-weight: 300;
-            color: $textColor;
-          }
-        }
-
-        h4 {
-          text-transform: uppercase;
-          letter-spacing: 3px;
-          font-weight: 400;
-          padding-top: 1rem;
-          padding-bottom: 0.5rem;
-          width: fit-content;
-          border-bottom: $accentColor solid 2px;
-        }
-
-        li {
-          // padding-block: 0.5rem;
-          line-height: 2;
-          letter-spacing: 3px;
-          font-weight: 300;
         }
 
         button {
           cursor: pointer;
           background: none;
-          outline: none;
           border: none;
-          width: 100%;
-          color: $textColor;
-          border: $accentColor solid 3px;
-          border-radius: 0.5rem;
-          padding: 0.5rem;
+          outline: none;
+          border: solid $accentColor 3px;
+          padding: 0.5rem 1rem;
+          margin-top: 1rem;
           text-transform: uppercase;
           letter-spacing: 3px;
+          color: $textColor;
+          border-radius: 0.3rem;
 
           &:hover {
-            background-color: #00a0ff;
-            transition: all ease-in 0.15s;
+            background-color: $accentColor;
             color: $primaryColor;
+            transition: all 0.2s ease-in;
           }
         }
       }
     }
 
-    .projectsContainer {
-      margin-top: 2rem;
+    @media only screen and (min-width: 900px) {
+      padding: 1rem 2rem;
+      .aboutMeContainer {
+        grid-template-columns: 25% 75%;
+        place-items: center;
+        margin-block: 2rem;
 
+        .imgContainer {
+          padding-top: 0;
+          padding-inline: 0;
+
+          img {
+            max-height: 850px;
+          }
+        }
+
+        .aboutMeContent {
+          border-radius: 0.5rem;
+          transform: translate(0);
+          margin-left: 1rem;
+        }
+      }
+    }
+
+    @media only screen and (min-width: 1500px) {
       h2 {
-        text-transform: uppercase;
-        letter-spacing: 3px;
-        padding-bottom: 0.5rem;
-        width: fit-content;
-        border-bottom: $accentColor solid 2px;
+        font-size: 1.8rem;
       }
+      .aboutMeContainer {
+        grid-template-columns: 15% 85%;
+        place-items: center;
 
-      .weatherAppContainer,
-      .recipeAppContainer,
-      .movieAppContainer {
-        background-color: $secondaryColor;
-        margin-top: 1rem;
-        padding: 1rem;
-        border-radius: 0.5rem;
-        box-shadow: rgba(44, 44, 44, 0.15) 1.95px 1.95px 2.6px;
+        .aboutMeContent {
+          padding: 3rem;
 
-        h3 {
-          font-weight: 700;
-          text-transform: uppercase;
-          text-align: center;
-          letter-spacing: 3px;
-          padding-bottom: 0.5rem;
-          color: $textColor;
-          border-bottom: $accentColor solid 2px;
-          margin-bottom: 1rem;
-        }
-
-        img {
-          margin: auto;
-          display: block;
-        }
-
-        h4 {
-          text-transform: uppercase;
-          letter-spacing: 3px;
-          font-weight: 400;
-          padding-top: 1rem;
-          padding-bottom: 0.5rem;
-          width: fit-content;
-          border-bottom: $accentColor solid 2px;
-        }
-
-        p {
-          font-weight: 300;
-          line-height: 2;
-          letter-spacing: 3px;
-          padding-top: 1rem;
-        }
-
-        .languagesUsed {
-          display: flex;
-          justify-content: left;
-          align-items: center;
-          gap: 1.5rem;
-          margin-top: 1.5rem;
-          i {
-            font-size: 4rem;
+          p {
+            font-size: 1.3rem;
           }
-        }
-
-        .buttonContainer {
-          display: flex;
-          flex-direction: column;
-          gap: 1rem;
-          margin-top: 1.5rem;
-          button {
-            cursor: pointer;
-            background: none;
-            outline: none;
-            border: none;
-            width: 100%;
-            color: $textColor;
-            border: $accentColor solid 3px;
-            border-radius: 0.5rem;
-            padding: 0.5rem;
-            text-transform: uppercase;
-            letter-spacing: 3px;
-
-            &:hover {
-              background-color: #00a0ff;
-              transition: all ease-in 0.15s;
-              color: $primaryColor;
-            }
-          }
-        }
-      }
-    }
-
-    .contactForm {
-      margin-top: 2rem;
-      h2 {
-        text-transform: uppercase;
-        letter-spacing: 3px;
-        padding-bottom: 0.5rem;
-        width: fit-content;
-        border-bottom: $accentColor solid 2px;
-      }
-      form {
-        fieldset {
-          display: flex;
-          justify-content: space-between;
-          flex-direction: column;
-          padding: 0;
-          margin: 0;
-          gap: 1rem;
-          border: none;
-          margin-top: 1rem;
-          border-radius: 1rem;
-          box-shadow: rgba(44, 44, 44, 0.15) 1.95px 1.95px 2.6px;
-
-          input,
-          textarea {
-            resize: none;
-            background-color: $secondaryColor;
-            color: $textColor;
-            border: none;
-            border-radius: 0.5rem;
-            padding: 0.5rem;
-            outline: none;
-            text-transform: uppercase;
-            letter-spacing: 3px;
-          }
-
-          textarea {
-            height: 15vh;
-          }
-
-          button {
-            cursor: pointer;
-            background: none;
-            outline: none;
-            border: none;
-            width: 100%;
-            color: $textColor;
-            border: $accentColor solid 3px;
-            border-radius: 0.5rem;
-            padding: 0.5rem;
-            letter-spacing: 3px;
-
-            &:hover {
-              background-color: #00a0ff;
-              transition: all ease-in 0.15s;
-              color: $primaryColor;
-            }
-          }
-        }
-      }
-    }
-  }
-
-  footer {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    background-color: $secondaryColor;
-    margin-top: 1rem;
-    padding: 1rem;
-    gap: 1rem;
-
-    .footerText {
-      p {
-        text-transform: uppercase;
-        text-align: center;
-        letter-spacing: 3px;
-      }
-    }
-
-    .socialLinks {
-      display: flex;
-      gap: 1rem;
-      a {
-        text-decoration: none;
-        font-size: 1.5rem;
-        color: $textColor;
-
-        &:hover {
-          color: #00a0ff;
-          transition: all ease-in 0.15s;
         }
       }
     }

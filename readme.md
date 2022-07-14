@@ -21,6 +21,7 @@
 - Google Fonts
 - Flexbox
 - CSS Grid
+- Devicon
 
 ## Author:
 

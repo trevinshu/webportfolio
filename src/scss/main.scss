@@ -145,14 +145,15 @@ body {
     padding: 1rem;
 
     .aboutMeMainContainer {
-      margin-bottom: 2rem;
+      margin-block: 2rem;
       h2 {
-        border-bottom: $accentColor solid 5px;
-        padding-block: 0.5rem;
-        width: fit-content;
+        text-decoration: underline;
+        text-decoration-color: $accentColor;
+        text-decoration-thickness: 5px;
+        text-underline-offset: 0.5rem;
         text-transform: uppercase;
         letter-spacing: 3px;
-        margin-bottom: 2rem;
+        padding-bottom: 1rem;
       }
 
       .aboutMeContainer {
@@ -161,7 +162,6 @@ body {
         margin-top: 1rem;
         .imgContainer {
           padding-inline: 2rem;
-
           img {
             max-height: 350px;
             border-radius: 0.5rem;
@@ -177,6 +177,8 @@ body {
             font-weight: 300;
             letter-spacing: 3px;
             line-height: 2;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            padding: 2rem;
 
             span {
               font-weight: 700;
@@ -191,7 +193,7 @@ body {
             outline: none;
             border: solid $accentColor 3px;
             padding: 0.5rem 1rem;
-            margin-top: 1rem;
+            margin-top: 2rem;
             text-transform: uppercase;
             letter-spacing: 3px;
             font-weight: 700;
@@ -211,9 +213,10 @@ body {
     .skillsMainContainer {
       margin-bottom: 2rem;
       h2 {
-        border-bottom: $accentColor solid 5px;
-        padding-block: 0.5rem;
-        width: fit-content;
+        text-decoration: underline;
+        text-decoration-color: $accentColor;
+        text-decoration-thickness: 5px;
+        text-underline-offset: 0.5rem;
         text-transform: uppercase;
         letter-spacing: 3px;
         margin-bottom: 2rem;
@@ -236,7 +239,6 @@ body {
           justify-content: center;
           align-items: center;
           h4 {
-            font-size: 1.2rem;
             text-transform: uppercase;
             letter-spacing: 3px;
             text-align: center;
@@ -247,13 +249,14 @@ body {
 
     .mainProjectsContainer {
       margin-bottom: 2rem;
-      h2 {
-        border-bottom: $accentColor solid 5px;
-        padding-block: 0.5rem;
-        width: fit-content;
+      .projectHeading {
+        text-decoration: underline;
+        text-decoration-color: $accentColor;
+        text-decoration-thickness: 5px;
+        text-underline-offset: 0.5rem;
+        padding-bottom: 2rem;
         text-transform: uppercase;
         letter-spacing: 3px;
-        margin-bottom: 1rem;
       }
 
       .projectsContainer {
@@ -265,7 +268,7 @@ body {
           display: grid;
           background-color: $secondaryColor;
           box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-          max-height: 1000px;
+          max-height: 2500px;
           padding: 1rem;
           border-radius: 0.5rem;
 
@@ -273,30 +276,38 @@ body {
             margin: auto;
           }
 
-          h4 {
-            font-size: 1.2rem;
+          h2 {
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 3px;
             text-align: center;
             padding-block: 1rem 0.5rem;
             margin-bottom: 1rem;
-            border-bottom: $accentColor solid 5px;
+            text-decoration: underline;
+            text-decoration-color: $accentColor;
+            text-decoration-thickness: 5px;
+            text-underline-offset: 0.5rem;
           }
 
           p {
             font-weight: 300;
+            font-size: 1.2rem;
             letter-spacing: 3px;
             line-height: 2;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            padding: 2rem;
           }
 
-          h5 {
+          h4 {
             font-size: 1.2rem;
             font-weight: 700;
+            text-decoration: underline;
+            text-decoration-color: $accentColor;
+            text-decoration-thickness: 5px;
+            text-underline-offset: 0.5rem;
             text-transform: uppercase;
             letter-spacing: 3px;
-            padding-block: 1rem 0.5rem;
-            border-bottom: $accentColor solid 5px;
+            padding-block: 1rem;
           }
 
           .builtWithContainer {
@@ -313,6 +324,7 @@ body {
             justify-content: center;
             align-items: center;
             flex-direction: column;
+            box-shadow: none;
 
             button {
               width: 100%;
@@ -340,10 +352,107 @@ body {
       }
     }
 
+    .contactContainer {
+      h2 {
+        text-decoration: underline;
+        text-decoration-color: $accentColor;
+        text-decoration-thickness: 5px;
+        text-underline-offset: 0.5rem;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        margin-bottom: 2rem;
+      }
+
+      .formContainer {
+        background-color: $secondaryColor;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        form {
+          .formGroup {
+            display: grid;
+            gap: 0.5rem;
+            margin-bottom: 0.5rem;
+            input {
+              border: none;
+              outline: none;
+              background: none;
+              background-color: $secondaryColor;
+              color: $textColor;
+              letter-spacing: 3px;
+              padding: 1rem;
+              border-radius: 0.5rem;
+              box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+              &::placeholder {
+                font-size: 1.2rem;
+                font-weight: 400;
+                letter-spacing: 3px;
+                color: $textColor;
+              }
+            }
+          }
+
+          textarea {
+            background: none;
+            border: none;
+            outline: none;
+            resize: none;
+            background-color: $secondaryColor;
+            color: $textColor;
+            border-radius: 0.5rem;
+            padding: 1rem;
+            width: 100%;
+            height: 150px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+            &::placeholder {
+              font-size: 1.2rem;
+              font-weight: 400;
+              letter-spacing: 3px;
+              color: $textColor;
+            }
+          }
+
+          button {
+            width: 100%;
+            cursor: pointer;
+            background: none;
+            border: none;
+            outline: none;
+            border: solid $accentColor 3px;
+            padding: 0.5rem 1rem;
+            margin-top: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-weight: 700;
+            color: $textColor;
+            border-radius: 0.3rem;
+
+            &:hover {
+              background-color: $accentColor;
+              color: $primaryColor;
+              transition: all 0.2s ease-in;
+            }
+          }
+        }
+      }
+    }
+
     @media only screen and (min-width: 600px) {
       .skillsMainContainer {
         .skillsContainer {
           grid-template-columns: repeat(3, 1fr);
+        }
+      }
+
+      .contactContainer {
+        .formContainer {
+          form {
+            .formGroup {
+              grid-template-columns: repeat(2, 1fr);
+            }
+          }
         }
       }
     }
@@ -366,7 +475,6 @@ body {
 
           .aboutMeContent {
             border-radius: 0.5rem;
-            transform: translate(0);
             margin-left: 1rem;
           }
         }
@@ -380,8 +488,18 @@ body {
       .mainProjectsContainer {
         .projectsContainer {
           grid-template-columns: repeat(2, 1fr);
-          div {
-            max-height: 1200px;
+        }
+      }
+
+      .contactContainer {
+        .formContainer {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+
+          form {
+            width: 90vw;
           }
         }
       }
@@ -389,9 +507,6 @@ body {
 
     @media only screen and (min-width: 1500px) {
       .aboutMeMainContainer {
-        h2 {
-          font-size: 1.8rem;
-        }
         .aboutMeContainer {
           grid-template-columns: 15% 85%;
           place-items: center;
@@ -400,16 +515,13 @@ body {
             padding: 2rem;
 
             p {
-              font-size: 1.3rem;
+              font-size: 1.2rem;
             }
           }
         }
       }
 
       .skillsMainContainer {
-        h2 {
-          font-size: 1.8rem;
-        }
         .skillsContainer {
           grid-template-columns: repeat(6, 1fr);
           div {
@@ -422,7 +534,6 @@ body {
         .projectsContainer {
           grid-template-columns: repeat(3, 1fr);
           div {
-            max-height: 2000px;
             padding: 2rem;
             p {
               font-size: 1.2rem;
@@ -430,6 +541,65 @@ body {
           }
         }
       }
+
+      .contactContainer {
+        .formContainer {
+          padding: 2rem;
+          form {
+            width: 80vw;
+
+            button {
+              width: 50%;
+              margin: auto;
+            }
+          }
+        }
+      }
+    }
+
+    @media only screen and (min-width: 3000px) {
+      .aboutMeMainContainer {
+        .aboutMeContainer {
+          .aboutMeContent {
+            padding: 4rem;
+
+            p {
+              font-size: 1.3rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .footerContainer {
+    background-color: $secondaryColor;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .socialLinks {
+      ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+
+        a {
+          color: $textColor;
+          text-decoration: none;
+          padding: 0;
+          margin: 0;
+        }
+      }
+    }
+
+    .copyrightInfo {
+      text-align: center;
+      font-weight: 300;
+      font-size: 1rem;
+      letter-spacing: 3px;
     }
   }
 }

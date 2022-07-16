@@ -416,22 +416,24 @@ body .container .mainProjectsContainer .projectsContainer div .btnContainer {
   display: flex;
 }
 
-body .container .mainProjectsContainer .projectsContainer div .btnContainer button {
+body .container .mainProjectsContainer .projectsContainer div .btnContainer a {
   width: 100%;
   cursor: pointer;
   text-transform: uppercase;
   letter-spacing: 3px;
   color: #f5f5f5;
+  text-align: center;
   background: none;
   border: 3px solid #00a0ff;
   border-radius: .3rem;
   outline: none;
   margin-top: 1rem;
   padding: .5rem 1rem;
-  font-weight: 700;
+  font-weight: 400;
+  text-decoration: none;
 }
 
-body .container .mainProjectsContainer .projectsContainer div .btnContainer button:hover {
+body .container .mainProjectsContainer .projectsContainer div .btnContainer a:hover {
   color: #121212;
   background-color: #00a0ff;
   transition: all .2s ease-in;

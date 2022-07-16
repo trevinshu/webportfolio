@@ -348,7 +348,7 @@ body {
             flex-direction: column;
             box-shadow: none;
 
-            button {
+            a {
               width: 100%;
               cursor: pointer;
               background: none;
@@ -359,9 +359,11 @@ body {
               margin-top: 1rem;
               text-transform: uppercase;
               letter-spacing: 3px;
-              font-weight: 700;
+              font-weight: 400;
               color: $textColor;
               border-radius: 0.3rem;
+              text-decoration: none;
+              text-align: center;
 
               &:hover {
                 background-color: $accentColor;

@@ -409,11 +409,11 @@ body .container .mainProjectsContainer .projectsContainer div .builtWithContaine
 }
 
 body .container .mainProjectsContainer .projectsContainer div .btnContainer {
-  box-shadow: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   display: flex;
+  box-shadow: 0 3px 8px #0000003d;
 }
 
 body .container .mainProjectsContainer .projectsContainer div .btnContainer a {

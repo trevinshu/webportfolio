@@ -166,7 +166,7 @@ body {
     padding: 1rem;
 
     .aboutMeMainContainer {
-      margin-block: 2rem;
+      margin-block: 1rem;
       h2 {
         text-decoration: underline;
         text-decoration-color: $accentColor;
@@ -199,7 +199,7 @@ body {
             letter-spacing: 3px;
             line-height: 2;
             box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-            padding: 2rem;
+            padding: 1rem;
 
             span {
               font-weight: 700;
@@ -312,12 +312,13 @@ body {
           }
 
           p {
+            margin-top: 1rem;
             font-weight: 300;
             font-size: 1.2rem;
             letter-spacing: 3px;
             line-height: 2;
             box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-            padding: 2rem;
+            padding: 1rem;
           }
 
           h4 {
@@ -559,7 +560,7 @@ body {
             padding: 2rem;
 
             p {
-              font-size: 1.2rem;
+              font-size: 1.4rem;
             }
           }
         }
@@ -580,7 +581,7 @@ body {
           div {
             padding: 2rem;
             p {
-              font-size: 1.2rem;
+              font-size: 1.4rem;
             }
           }
         }
@@ -605,10 +606,6 @@ body {
         .aboutMeContainer {
           .aboutMeContent {
             padding: 4rem;
-
-            p {
-              font-size: 1.3rem;
-            }
           }
         }
       }

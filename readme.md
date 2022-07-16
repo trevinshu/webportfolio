@@ -8,6 +8,8 @@
 
 ## View Live:
 
+https://trevin-portfolio.netlify.app/
+
 ## Languages, Tools, Techniques & Packages Used:
 
 - HTML

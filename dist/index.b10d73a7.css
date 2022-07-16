@@ -484,6 +484,12 @@ body .container .contactContainer .formContainer form textarea::placeholder {
   font-weight: 400;
 }
 
+body .container .contactContainer .formContainer form .recaptchaContainer {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
 body .container .contactContainer .formContainer form .btnContainer button {
   width: 100%;
   cursor: pointer;

@@ -417,6 +417,12 @@ body {
             }
           }
 
+          .recaptchaContainer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+
           .btnContainer {
             button {
               width: 100%;

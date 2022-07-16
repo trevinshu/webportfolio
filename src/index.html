@@ -14,11 +14,10 @@
       <nav>
         <img src="img/logo.webp" alt="site logo" width="100px" />
         <ul id="menu" class="menu">
-          <li>About Me</li>
-          <li>Education</li>
-          <li>Skills</li>
-          <li>Projects</li>
-          <button class="contactBtn">Contact Me</button>
+          <li><a href="#aboutMe">About Me</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <a href="#contactMe" class="contactBtn"> Contact Me</a>
         </ul>
         <button id="burgerBtn" class="burgerBtn"><i class="fa-solid fa-bars"></i></button>
       </nav>
@@ -28,7 +27,7 @@
       </div>
     </header>
     <main class="container">
-      <div class="aboutMeMainContainer">
+      <div class="aboutMeMainContainer" id="aboutMe">
         <h2>About Me:</h2>
         <section class="aboutMeContainer">
           <div class="imgContainer">
@@ -47,7 +46,7 @@
           </div>
         </section>
       </div>
-      <div class="skillsMainContainer">
+      <div class="skillsMainContainer" id="skills">
         <h2>Skills/Tools:</h2>
         <section class="skillsContainer">
           <div class="htmlContainer">
@@ -104,7 +103,7 @@
           </div>
         </section>
       </div>
-      <div class="mainProjectsContainer">
+      <div class="mainProjectsContainer" id="projects">
         <h2 class="projectHeading">Projects:</h2>
         <div class="projectsContainer">
           <div class="recipeAppContainer">
@@ -164,7 +163,7 @@
           </div>
         </div>
       </div>
-      <div class="contactContainer">
+      <div class="contactContainer" id="contactMe">
         <h2>Contact Me:</h2>
         <div class="formContainer">
           <form name="portfolio-contact" method="POST" data-netlify="true" data-netlify-recaptcha="true" >
@@ -184,9 +183,9 @@
    <footer class="footerContainer">
     <div class="socialLinks">
       <ul>
-       <a href="#"><i class="fa-solid fa-envelope"></i></a>
-        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-        <a href="#"><i class="fa-brands fa-github"></i></a>
+        <a href="mailto:trevinshu2008@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/trevin-shu/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/trevinshu" target="_blank"><i class="fa-brands fa-github"></i></a>
       </ul>
     </div>
     <div class="copyrightInfo">

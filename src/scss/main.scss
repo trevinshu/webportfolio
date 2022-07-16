@@ -43,8 +43,21 @@ body {
 
         li {
           list-style: none;
-          text-transform: uppercase;
-          letter-spacing: 3px;
+
+          a {
+            text-transform: uppercase;
+            text-decoration: none;
+            color: $textColor;
+            letter-spacing: 3px;
+
+            &:hover {
+              transition: all ease-in 0.3s;
+              text-decoration: underline;
+              text-decoration-color: $accentColor;
+              text-decoration-thickness: 5px;
+              text-underline-offset: 0.5rem;
+            }
+          }
         }
 
         .contactBtn {
@@ -52,12 +65,20 @@ body {
           border: none;
           outline: none;
           background-color: $accentColor;
+          border: solid $accentColor 3px;
           border-radius: 0.5rem;
           padding: 0.5rem 1rem;
           text-transform: uppercase;
           letter-spacing: 3px;
           color: $primaryColor;
           font-weight: 700;
+          text-decoration: none;
+
+          &:hover {
+            background-color: $secondaryColor;
+            color: $textColor;
+            transition: all ease-in 0.2s;
+          }
         }
       }
 
@@ -630,6 +651,17 @@ body {
       font-weight: 300;
       font-size: 1rem;
       letter-spacing: 3px;
+    }
+
+    @media only screen and (min-width: 1500px) {
+      .socialLinks {
+        ul {
+          gap: 2rem;
+          a {
+            font-size: 2rem;
+          }
+        }
+      }
     }
   }
 }

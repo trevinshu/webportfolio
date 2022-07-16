@@ -99,9 +99,22 @@ body header nav .menu {
 }
 
 body header nav .menu li {
-  text-transform: uppercase;
-  letter-spacing: 3px;
   list-style: none;
+}
+
+body header nav .menu li a {
+  text-transform: uppercase;
+  color: #f5f5f5;
+  letter-spacing: 3px;
+  text-decoration: none;
+}
+
+body header nav .menu li a:hover {
+  text-decoration: underline;
+  text-underline-offset: .5rem;
+  text-decoration-color: #00a0ff;
+  text-decoration-thickness: 5px;
+  transition: all .3s ease-in;
 }
 
 body header nav .menu .contactBtn {
@@ -109,11 +122,18 @@ body header nav .menu .contactBtn {
   letter-spacing: 3px;
   color: #121212;
   background: #00a0ff;
-  border: none;
+  border: 3px solid #00a0ff;
   border-radius: .5rem;
   outline: none;
   padding: .5rem 1rem;
   font-weight: 700;
+  text-decoration: none;
+}
+
+body header nav .menu .contactBtn:hover {
+  color: #f5f5f5;
+  background-color: #2c2c2c;
+  transition: all .2s ease-in;
 }
 
 body header nav .showMenu {
@@ -670,6 +690,16 @@ body .footerContainer .copyrightInfo {
   letter-spacing: 3px;
   font-size: 1rem;
   font-weight: 300;
+}
+
+@media only screen and (min-width: 1500px) {
+  body .footerContainer .socialLinks ul {
+    gap: 2rem;
+  }
+
+  body .footerContainer .socialLinks ul a {
+    font-size: 2rem;
+  }
 }
 
 /*# sourceMappingURL=index.b10d73a7.css.map */

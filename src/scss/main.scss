@@ -421,6 +421,10 @@ body {
             display: grid;
             place-items: center;
             margin-top: 0.5rem;
+
+            iframe {
+              width: 90%;
+            }
           }
 
           .btnContainer {

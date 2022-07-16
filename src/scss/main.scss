@@ -418,9 +418,11 @@ body {
           }
 
           .recaptchaContainer {
+            margin-top: 0.5rem;
             display: flex;
             align-items: center;
             justify-content: center;
+            max-width: 90%;
           }
 
           .btnContainer {

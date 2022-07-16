@@ -6,12 +6,12 @@
     "start": "parcel src/index.html",
     "build": "parcel build src/index.html"
   },
+  "browserslist": "> 0.5%, last 2 versions, not dead",
   "author": "Trevin Shu",
   "license": "ISC",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.6.2",
     "parcel": "^2.6.2",
-    "postcss-preset-env": "^7.7.2",
     "sass": "^1.53.0"
   }
 }

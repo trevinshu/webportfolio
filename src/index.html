@@ -167,13 +167,15 @@
       <div class="contactContainer">
         <h2>Contact Me:</h2>
         <div class="formContainer">
-          <form action="">
+          <form name="portfolio-contact" method="POST" data-netlify="true">
             <div class="formGroup">
-              <input type="text" placeholder="Name">
-              <input type="email" placeholder="Email">
+              <input type="text" placeholder="Name" name="name">
+              <input type="email" name="email" placeholder="Email">
             </div>
-            <textarea name="" id="" placeholder="Message"></textarea>
-           <button type="submit">Submit Message</button>
+            <textarea name="message" placeholder="Message"></textarea>
+            <div class="btnContainer">
+              <button type="submit">Submit Message</button>
+            </div>
           </form>
         </div>
       </div>

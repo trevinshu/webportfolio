@@ -192,17 +192,18 @@ body {
             border: none;
             outline: none;
             border: solid $accentColor 3px;
+            background-color: $accentColor;
             padding: 0.5rem 1rem;
             margin-top: 2rem;
             text-transform: uppercase;
             letter-spacing: 3px;
             font-weight: 700;
-            color: $textColor;
+            color: $primaryColor;
             border-radius: 0.3rem;
 
             &:hover {
-              background-color: $accentColor;
-              color: $primaryColor;
+              background-color: $secondaryColor;
+              color: $textColor;
               transition: all 0.2s ease-in;
             }
           }
@@ -369,6 +370,8 @@ body {
         border-radius: 0.5rem;
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
         form {
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          padding: 2rem;
           .formGroup {
             display: grid;
             gap: 0.5rem;
@@ -414,25 +417,28 @@ body {
             }
           }
 
-          button {
-            width: 100%;
-            cursor: pointer;
-            background: none;
-            border: none;
-            outline: none;
-            border: solid $accentColor 3px;
-            padding: 0.5rem 1rem;
-            margin-top: 1rem;
-            text-transform: uppercase;
-            letter-spacing: 3px;
-            font-weight: 700;
-            color: $textColor;
-            border-radius: 0.3rem;
-
-            &:hover {
+          .btnContainer {
+            button {
+              width: 100%;
+              cursor: pointer;
+              background: none;
+              border: none;
+              outline: none;
               background-color: $accentColor;
+              border: solid $accentColor 1px;
+              padding: 0.5rem 1rem;
+              margin-top: 1rem;
+              text-transform: uppercase;
+              letter-spacing: 3px;
+              font-weight: 700;
               color: $primaryColor;
-              transition: all 0.2s ease-in;
+              border-radius: 0.3rem;
+
+              &:hover {
+                background-color: $secondaryColor;
+                color: $textColor;
+                transition: all 0.2s ease-in;
+              }
             }
           }
         }
@@ -451,6 +457,15 @@ body {
           form {
             .formGroup {
               grid-template-columns: repeat(2, 1fr);
+            }
+
+            .btnContainer {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              button {
+                width: 50%;
+              }
             }
           }
         }
@@ -550,7 +565,6 @@ body {
 
             button {
               width: 50%;
-              margin: auto;
             }
           }
         }
@@ -578,19 +592,29 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
 
     .socialLinks {
       ul {
+        padding: 0;
+        margin: 0;
+
         display: flex;
         justify-content: space-between;
         align-items: center;
-        gap: 1rem;
+        gap: 1.5rem;
 
         a {
           color: $textColor;
           text-decoration: none;
           padding: 0;
           margin: 0;
+          font-size: 1.3rem;
+
+          &:hover {
+            color: $accentColor;
+          }
         }
       }
     }

@@ -490,10 +490,6 @@ body .container .contactContainer .formContainer form .recaptchaContainer {
   display: grid;
 }
 
-body .container .contactContainer .formContainer form .recaptchaContainer iframe {
-  width: 90%;
-}
-
 body .container .contactContainer .formContainer form .btnContainer button {
   width: 100%;
   cursor: pointer;

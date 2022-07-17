@@ -196,6 +196,7 @@ body {
 
           p {
             font-weight: 300;
+            font-size: 1rem;
             letter-spacing: 3px;
             line-height: 2;
             box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -314,7 +315,7 @@ body {
           p {
             margin-top: 1rem;
             font-weight: 300;
-            font-size: 1.2rem;
+            font-size: 1rem;
             letter-spacing: 3px;
             line-height: 2;
             box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -412,7 +413,7 @@ body {
               box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
               &::placeholder {
-                font-size: 1.2rem;
+                font-size: 1rem;
                 font-weight: 400;
                 letter-spacing: 3px;
                 color: $textColor;
@@ -434,7 +435,7 @@ body {
             box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
             &::placeholder {
-              font-size: 1.2rem;
+              font-size: 1rem;
               font-weight: 400;
               letter-spacing: 3px;
               color: $textColor;
@@ -592,6 +593,20 @@ body {
           padding: 2rem;
           form {
             width: 80vw;
+
+            .formGroup {
+              input {
+                &::placeholder {
+                  font-size: 1.2rem;
+                }
+              }
+            }
+
+            textarea {
+              &::placeholder {
+                font-size: 1.2rem;
+              }
+            }
 
             button {
               width: 50%;

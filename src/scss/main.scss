@@ -652,12 +652,26 @@ body {
       letter-spacing: 3px;
     }
 
+    @media only screen and (min-width: 900px) {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      .socialLinks {
+        ul {
+          gap: 1.5rem;
+        }
+      }
+    }
+
     @media only screen and (min-width: 1500px) {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
       .socialLinks {
         ul {
           gap: 2rem;
           a {
-            font-size: 2rem;
+            font-size: 1.5rem;
           }
         }
       }

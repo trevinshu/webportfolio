@@ -35,7 +35,14 @@
         <h2>About Me:</h2>
         <section class="aboutMeContainer">
           <div class="imgContainer">
-            <img src="img/profilepic.webp" alt="profile pic" />
+            <picture>
+              <source media="(max-width: 899px)" srcset="img/profilepic-small.webp" type="image/webp"> 
+              <source media="(min-width: 900px)" srcset="img/profilepic-large.webp" type="image/webp">
+              <source media="(max-width: 899px)" srcset="img/profilepic-small.jpg"  type="image/jpeg">
+              <source media="(min-width: 900px)" srcset="img/profilepic-large.jpg"  type="image/jpeg">
+
+              <img src="img/profilepic-large.jpg" alt="">
+            </picture>
           </div>
           <div class="aboutMeContent">
             <p>
@@ -160,8 +167,8 @@
           </div>
           <div class="weatherAppContainer">
             <picture>
-              <source srcset="img/weatherapp.webp">
-              <img src="img/weatherapp.jpg" alt="Screenshot of the Weather App" width="500px" height="243px"> 
+              <source srcset="img/weatherapp.webp" type="image/webp">
+              <img src="img/weatherapp.jpg" alt="Screenshot of the Weather App" width="500px" height="243px" type="image/jpg"> 
             </picture>
             <h2>Weather App</h2>
             <h4>Description:</h4>

@@ -184,7 +184,8 @@ body {
         .imgContainer {
           padding-inline: 2rem;
           img {
-            // max-height: 350px;
+            aspect-ratio: 16/9;
+            max-height: 350px;
             border-radius: 0.5rem;
           }
         }
@@ -471,6 +472,13 @@ body {
     }
 
     @media only screen and (min-width: 600px) {
+      .aboutMeMainContainer {
+        .aboutMeContainer {
+          .imgContainer {
+            max-width: 450px;
+          }
+        }
+      }
       .skillsMainContainer {
         .skillsContainer {
           grid-template-columns: repeat(3, 1fr);
@@ -501,16 +509,17 @@ body {
       padding: 1rem 2rem;
       .aboutMeMainContainer {
         .aboutMeContainer {
-          grid-template-columns: 25% 75%;
+          grid-template-columns: 40% 60%;
           place-items: center;
           margin-block: 2rem;
 
           .imgContainer {
             padding-inline: 0;
 
-            // img {
-            //   max-height: 850px;
-            // }
+            img {
+              aspect-ratio: 16/9;
+              max-height: 450px;
+            }
           }
 
           .aboutMeContent {
@@ -548,7 +557,7 @@ body {
     @media only screen and (min-width: 1500px) {
       .aboutMeMainContainer {
         .aboutMeContainer {
-          grid-template-columns: 15% 85%;
+          grid-template-columns: 20% 80%;
           place-items: center;
 
           .aboutMeContent {

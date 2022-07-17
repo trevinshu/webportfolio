@@ -162,6 +162,8 @@ body {
 
   .container {
     padding: 1rem;
+    max-width: 3300px;
+    margin: auto;
 
     .aboutMeMainContainer {
       margin-block: 1rem;
@@ -182,7 +184,7 @@ body {
         .imgContainer {
           padding-inline: 2rem;
           img {
-            max-height: 350px;
+            // max-height: 350px;
             border-radius: 0.5rem;
           }
         }
@@ -506,9 +508,9 @@ body {
           .imgContainer {
             padding-inline: 0;
 
-            img {
-              max-height: 850px;
-            }
+            // img {
+            //   max-height: 850px;
+            // }
           }
 
           .aboutMeContent {
@@ -611,8 +613,9 @@ body {
     @media only screen and (min-width: 3000px) {
       .aboutMeMainContainer {
         .aboutMeContainer {
+          grid-template-columns: 15% 75%;
           .aboutMeContent {
-            padding: 4rem;
+            padding: 3rem;
           }
         }
       }

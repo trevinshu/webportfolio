@@ -37,9 +37,12 @@
         <section class="aboutMeContainer">
           <div class="imgContainer">
             <picture>
-              <source media="(min-width: 900px)" srcset="img/profilepic-large.webp" type="image/webp">
-              <source media="(min-width: 900px)" srcset="img/profilepic-large.jpg" type="image/jpeg">
-              <img src="img/profilepic-large.jpg" alt="something" height="850px" width="686px">
+              <source media="(max-width: 899px)" srcset="img/profilepic-small.webp" type="image/webp">
+              <source media="(min-width: 899px)" srcset="img/profilepic-small.jpg" type="image/jpeg">
+
+              <source media="(max-width: 900px)" srcset="img/profilepic-medium.webp" type="image/webp">
+              <source media="(min-width: 900px)" srcset="img/profilepic-medium.jpg" type="image/jpeg">
+              <img src="img/profilepic-medium.jpg">
             </picture>
           </div>
           <div class="aboutMeContent">

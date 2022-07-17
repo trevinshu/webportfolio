@@ -47,13 +47,10 @@ body {
           text-decoration: none;
           color: $textColor;
           letter-spacing: 3px;
+          font-weight: 700;
 
           &:hover {
-            transition: all ease-in 0.3s;
-            text-decoration: underline;
-            text-decoration-color: $accentColor;
-            text-decoration-thickness: 5px;
-            text-underline-offset: 0.5rem;
+            color: $accentColor;
           }
         }
 
@@ -184,8 +181,6 @@ body {
         .imgContainer {
           padding-inline: 2rem;
           img {
-            aspect-ratio: 16/9;
-            max-height: 350px;
             border-radius: 0.5rem;
           }
         }
@@ -472,13 +467,6 @@ body {
     }
 
     @media only screen and (min-width: 600px) {
-      .aboutMeMainContainer {
-        .aboutMeContainer {
-          .imgContainer {
-            max-width: 450px;
-          }
-        }
-      }
       .skillsMainContainer {
         .skillsContainer {
           grid-template-columns: repeat(3, 1fr);
@@ -509,17 +497,12 @@ body {
       padding: 1rem 2rem;
       .aboutMeMainContainer {
         .aboutMeContainer {
-          grid-template-columns: 40% 60%;
+          grid-template-columns: 30% 70%;
           place-items: center;
           margin-block: 2rem;
 
           .imgContainer {
             padding-inline: 0;
-
-            img {
-              aspect-ratio: 16/9;
-              max-height: 450px;
-            }
           }
 
           .aboutMeContent {
@@ -557,9 +540,8 @@ body {
     @media only screen and (min-width: 1500px) {
       .aboutMeMainContainer {
         .aboutMeContainer {
-          grid-template-columns: 20% 80%;
+          grid-template-columns: 15% 85%;
           place-items: center;
-
           .aboutMeContent {
             padding: 2rem;
 
@@ -622,7 +604,6 @@ body {
     @media only screen and (min-width: 3000px) {
       .aboutMeMainContainer {
         .aboutMeContainer {
-          grid-template-columns: 15% 75%;
           .aboutMeContent {
             padding: 3rem;
           }

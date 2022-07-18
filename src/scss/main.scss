@@ -545,9 +545,9 @@ body {
           .aboutMeContent {
             padding: 2rem;
 
-            p {
-              font-size: 1.2rem;
-            }
+            // p {
+            //   font-size: 1.2rem;
+            // }
           }
         }
       }
@@ -566,9 +566,6 @@ body {
           grid-template-columns: repeat(3, 1fr);
           div {
             padding: 2rem;
-            p {
-              font-size: 1.2rem;
-            }
           }
         }
       }
@@ -580,18 +577,18 @@ body {
             width: 80vw;
 
             .formGroup {
-              input {
-                &::placeholder {
-                  font-size: 1.2rem;
-                }
-              }
+              // input {
+              //   &::placeholder {
+              //     font-size: 1.2rem;
+              //   }
+              // }
             }
 
-            textarea {
-              &::placeholder {
-                font-size: 1.2rem;
-              }
-            }
+            // textarea {
+            //   &::placeholder {
+            //     font-size: 1.2rem;
+            //   }
+            // }
 
             button {
               width: 50%;

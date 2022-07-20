@@ -6,6 +6,8 @@
 
 ## Screenshot:
 
+![](src/img/project-screenshot.png?raw=true)
+
 ## View Live:
 
 https://trevin-portfolio.netlify.app/

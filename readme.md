@@ -10,7 +10,7 @@
 
 ## View Live:
 
-https://trevin-portfolio.netlify.app/
+https://trevinshu.me/
 
 ## Languages, Tools, Techniques & Packages Used:
 

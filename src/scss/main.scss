@@ -204,25 +204,30 @@ body {
             }
           }
 
-          button {
-            cursor: pointer;
-            background: none;
-            border: none;
-            outline: none;
-            border: solid $accentColor 3px;
-            background-color: $accentColor;
-            padding: 0.5rem 1rem;
-            margin-top: 2rem;
-            text-transform: uppercase;
-            letter-spacing: 3px;
-            font-weight: 700;
-            color: $primaryColor;
-            border-radius: 0.3rem;
-
-            &:hover {
-              background-color: $secondaryColor;
+          .btnContainer {
+            margin-block: 2rem 1rem;
+            a {
+              width: 100%;
+              cursor: pointer;
+              background: none;
+              border: none;
+              outline: none;
+              border: solid $accentColor 3px;
+              padding: 1rem;
+              margin-top: 1rem;
+              text-transform: uppercase;
+              letter-spacing: 3px;
+              font-weight: 400;
               color: $textColor;
-              transition: all 0.2s ease-in;
+              border-radius: 0.3rem;
+              text-decoration: none;
+              text-align: center;
+
+              &:hover {
+                background-color: $accentColor;
+                color: $secondaryColor;
+                transition: all 0.2s ease-in;
+              }
             }
           }
         }
